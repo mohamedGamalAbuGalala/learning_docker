@@ -1,0 +1,6 @@
+
+https://www.youtube.com/watch?v=YFl2mCHdv24
+
+docker build -t helloworld . 
+docker run -p 80:80 helloworld 
+docker run -p 80:80 -v ~/Projects/learning_docker/01/src/:/var/www/html/ helloworld
