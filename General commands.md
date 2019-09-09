@@ -26,7 +26,7 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 - `docker run -d mmumshad/simple-webapp` run image in de-attached mode.
 - `docker attach ${name_of_instance_or_id}` attach image to current terminal.
 - `docker run -i ${name_of_instance_or_id}` make x image listen on STDIN of my pc.
-- `docker run -p 80:5000 ${name_of_instance_or_id}` map port **80 of host** to serve port **5000 on docker** container for more info [check port mapping in images section](#portMapping).
+- `docker run -p 80:5000 ${name_of_instance_or_id}` map port **80 of host** to serve port **5000 on docker** container for more info [check port mapping in images section](#Images).
 - `docker build .` build the current image in this directory
 - `docker run -it ${name_of_instance_or_id}` => get in docker image terminal
 - `docker run -v /home/galala/Projects/learning_docker:/mnt -it a2a15febcdf3` **mount** the learning_docker folder into /mnt in docker image (mount means that the folder will be synced between docker image and system folder)
@@ -37,5 +37,5 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 
 ## Images
 
-- [Port mapping](#portMapping)
-![port mapping](./port_mapping.png)
+- Port mapping
+  ![port mapping](./port_mapping.png)
