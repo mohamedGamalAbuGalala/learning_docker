@@ -35,7 +35,7 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 
 ## Notes
 
-- Every docker container have its ip but its private by host of the container.
+- Every docker container has its IP but, It's private by a host of the container.
 
 ## Images
 
@@ -44,7 +44,7 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 
 ## Bugs
 
-- When installing jenkins I got an error due to that the image was deprecated 👇👇👇
+- When installing Jenkins I got an error due to that the image was deprecated 👇👇👇
 
   - solution installing the new lts image of jenkins and try again:
 
