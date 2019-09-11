@@ -26,12 +26,15 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 - `docker run -d mmumshad/simple-webapp` run image in de-attached mode.
 - `docker attach ${id}` attach image to current terminal.
 - `docker run -i ${name_of_instance_or_id}` make x image listen on STDIN of my pc.
-- `docker run -p 80:5000 ${name_of_instance_or_id}` map port **80 of host** to serve port **5000 on docker** container for more info [check port mapping in images section 👇👇👇](#Images).
+- `docker run -p 80:5000 ${name_of_instance_or_id}` map port **80 of host** to serve port **5000 on docker** container for more info [check port mapping in images section 👇👇👇](#Port_mapping).
 - `docker run -v /opt/datadir:/var/lib/mysql mysql` mapping `/var/lib/mysql` dir from docker image to `/opt/datadir` dir in host so if the container is destroyed the data is saved in host.
 - `docker inspect ${name_of_instance_or_id}` get info about the running container like its ip.
 - `docker build .` build the current image in this directory
 - `docker run -it ${name_of_instance_or_id}` => get in docker image terminal
 - `docker run -v /home/galala/Projects/learning_docker:/mnt -it a2a15febcdf3` **mount** the learning_docker folder into /mnt in docker image (mount means that the folder will be synced between docker image and system folder)
+- `docker build . -t bugalala/my-first-app` builds the current docker folder and tag it with a name.
+- `docker login` login to docker hub account.
+- `docker run ubuntu --network=none/host` see the difference in [default networks in images section 👇👇👇](#Default_Networks).
 
 ## Notes
 
@@ -39,8 +42,13 @@ follow instructions on [this link](https://www.digitalocean.com/community/tutori
 
 ## Images
 
-- Port mapping
-  ![port mapping](./port_mapping.png)
+### Port_mapping
+
+![port mapping](./port_mapping.png)
+
+### Default_Networks
+
+![default networks](./networks.png)
 
 ## Bugs
 
